@@ -1,1 +1,3 @@
-# SpringBootExample
+SpringBootExample
+这是一个spring boot的web项目的demo。
+包含使用多环境的不同配置，比如使用配置文件中的变量、属性配置；controller的使用；使用jpa进行数据库操作，比如不写sql就可以自动建表、增删改查数据、数据库的事务操作。
