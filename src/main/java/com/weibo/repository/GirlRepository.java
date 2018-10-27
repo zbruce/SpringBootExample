@@ -1,5 +1,6 @@
-package com.weibo;
+package com.weibo.repository;
 
+import com.weibo.domain.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.*;
 public interface GirlRepository extends JpaRepository<Girl, Integer> { //类名和id的类型

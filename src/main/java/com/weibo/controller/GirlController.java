@@ -1,9 +1,11 @@
-package com.weibo;
+package com.weibo.controller;
 
+import com.weibo.domain.Girl;
+import com.weibo.repository.GirlRepository;
+import com.weibo.service.GirlService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import java.util.*;
 
 @RestController
@@ -30,7 +32,7 @@ public class GirlController {
      * @param age
      * @return
      */
-    @PostMapping(value = "/girladd") //可以使用postman做试验，参数在body中添加，post请求
+    @PostMapping(value = "/girladd") //可以使用postman做试验，参数在body中添加，post请求。
     public Girl girlAdd(@RequestParam("cupSize") String cupSize, @RequestParam("age") Integer age){
         Girl girl = new Girl();
         girl.setAge(age);

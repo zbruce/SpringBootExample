@@ -1,5 +1,7 @@
-package com.weibo;
+package com.weibo.service;
 
+import com.weibo.domain.Girl;
+import com.weibo.repository.GirlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

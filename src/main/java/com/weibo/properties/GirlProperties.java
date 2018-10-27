@@ -1,4 +1,4 @@
-package com.weibo;
+package com.weibo.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

@@ -1,8 +1,8 @@
-package com.weibo;
+package com.weibo.controller;
 
+import com.weibo.properties.GirlProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 //web方式访问需要restcontroller注解，等同于Controller+ResponseBody，原来返回json需要这两个
@@ -31,6 +31,11 @@ public class HelloController {
 
     @RequestMapping(value = "/hi", method = RequestMethod.POST) //post方法不支持浏览器访问，可以使用postman
     public String hi(){
+        return girlProperties.getCupSize() + " " + girlProperties.getAge();
+    }
+
+    @GetMapping(value = "/hii")
+    public String hii(){
         return girlProperties.getCupSize() + " " + girlProperties.getAge();
     }
 
