@@ -8,7 +8,7 @@ public class ResultUtil {
         Result result = new Result();
         result.setCode(0);
         result.setMessage("success");
-        result.setDate(object);
+        result.setData(object);
         return result;
     }
 

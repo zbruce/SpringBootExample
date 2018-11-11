@@ -14,7 +14,7 @@ public class Result<T> {
     private String message;
 
     /**  具体内容 */
-    private T date;
+    private T data;
 
     public Integer getCode() {
         return code;
@@ -32,11 +32,11 @@ public class Result<T> {
         this.message = message;
     }
 
-    public T getDate() {
-        return date;
+    public T getData() {
+        return data;
     }
 
-    public void setDate(T date) {
-        this.date = date;
+    public void setData(T data) {
+        this.data = data;
     }
 }
