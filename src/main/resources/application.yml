@@ -13,3 +13,7 @@ spring:
 height: 1.70
 gender: female
 content: "cupSize: ${height}, age: ${gender}"
+first: first
+second: second
+third: third
+fourth: fourth

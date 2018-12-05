@@ -2,16 +2,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--指定当前pom到版本-->
     <modelVersion>4.0.0</modelVersion>
 
+    <!--反写公司网址+项目名-->
     <groupId>com.weibo</groupId>
+    <!--项目名+模块名-->
     <artifactId>springboot-example</artifactId>
+    <!--第一个0表示大版本号，第二个0表示分支版本号，第三个0表示小版本号-->
+    <!--alfa:内部测试版本，beta:公开测试版本，release:稳定版本，ja:正式发布版本-->
     <version>1.0-SNAPSHOT</version>
+    <!--默认打包方式jar，还可以是war、zip、pom-->
     <packaging>jar</packaging>
 
+    <!--项目描述名，产生项目文档时使用-->
     <name>example</name>
+    <!--项目描述-->
     <description>demo project for Spring Boot</description>
 
+    <!--<url></url> 项目地址信息-->
+    <!--<developers></developers> 开发人员列表-->
+    <!--<licenses></licenses> 许可证-->
+    <!--<organization></organization>-->
+    <!--<modules> 聚合多个maven项目，一起编译-->
+        <!--<module></module>-->
+    <!--</modules>-->
+
+    <!--子模块中使用，对父模块pom的继承-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -26,8 +43,26 @@
         <spring.version>4.3.5.RELEASE</spring.version>
         <springboot.version>1.4.3.RELEASE</springboot.version>
     </properties>
-    
+
+    <!--<dependencyManagement> 定义在父模块中，并不实际使用，而是供子模块继承使用-->
+    <!--<dependencies>-->
+    <!--<dependency>-->
+    <!--<groupId></groupId>-->
+    <!--<artifactId></artifactId>-->
+    <!--</dependency>-->
+    <!--</dependencies>-->
+    <!--</dependencyManagement>-->
+
     <dependencies>
+        <!--<dependency>-->
+            <!--<groupId></groupId>-->
+            <!--<artifactId></artifactId>-->
+            <!--<version></version>-->
+            <!--<type></type>-->
+            <!--<scope></scope> 哪个环境可用-->
+            <!--<optional></optional> 设置依赖是否可选，true/false，默认false，表示子项目必须显示引入改依赖-->
+        <!--</dependency>-->
+
         <!--web项目依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -65,11 +100,6 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId></groupId>-->
-            <!--<artifactId></artifactId>-->
-            <!--<version></version>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
